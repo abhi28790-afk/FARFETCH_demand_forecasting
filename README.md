@@ -10,7 +10,7 @@
 
 This project tackles a real-world retail forecasting challenge: **predicting the next 90 days of daily sales** across multiple stores and items using 5 years of historical data.
 
-The analysis covers the full data science pipeline — from exploratory analysis to a production-ready XGBoost forecasting model — and translates results into **strategic business recommendations** relevant to a luxury fashion retailer like FARFETCH.
+The analysis covers the full data science pipeline – from exploratory analysis to a production-ready XGBoost forecasting model – and translates results into **strategic business recommendations** relevant to a luxury fashion retailer like FARFETCH.
 
 ---
 
@@ -47,7 +47,7 @@ farfetch-demand-forecasting/
 
 **Step 1 — Clone the repository**
 ```bash
-git clone https://github.com/YOUR_USERNAME/farfetch-demand-forecasting.git
+git clone https://github.com/abhi28790-afk/FARFETCH_demand_forecasting.git
 cd farfetch-demand-forecasting
 ```
 
@@ -73,7 +73,7 @@ Total daily sales show a consistent upward trend over 5 years with clear annual 
 Promotional periods drive a measurable average sales lift. However, high variance across items suggests promo effectiveness is not uniform — critical intelligence for a luxury brand where indiscriminate discounting can damage brand equity.
 
 **Insight 3 — Weekly & Monthly Seasonality**  
-Sales follow a strong day-of-week pattern with weekend peaks, and a monthly cycle with Q4 as the strongest period. These patterns are essential for weekly inventory and staffing planning.
+Sales follow a strong day-of-week pattern with weekend peaks and a monthly cycle with Q4 as the strongest period. These patterns are essential for weekly inventory and staffing planning.
 
 ---
 
@@ -92,7 +92,7 @@ Sales follow a strong day-of-week pattern with weekend peaks, and a monthly cycl
 |---|---|
 | Identity | `store_id`, `item_id` |
 | Price & Promo | `price`, `promo`, `price_change`, `promo_lag_1` |
-| Time | `weekday`, `month`, `quarter`, `dayofyear`, `is_weekend` |
+| Time | `weekday`, `month`, `quarter`, `day of year`, `is_weekend` |
 | Lag | `lag_1`, `lag_7`, `lag_30` |
 | Rolling | `rolling_mean_7`, `rolling_mean_30`, `rolling_std_7` |
 
